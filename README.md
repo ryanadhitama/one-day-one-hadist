@@ -1,1 +1,1 @@
-# One Day One Hadist
+# Hadist of the day

@@ -1,9 +1,15 @@
 import Head from 'next/head';
+import { useState, useEffect } from 'react';
 import { Box, Footer, Hadist, Header } from '@components';
 import { useHadist } from '@libs/hooks/useHadist';
 
 export default function Home() {
   const data = useHadist();
+  const [hydrated, setHydrated] = useState(false);
+  useEffect(() => {
+    setHydrated(true);
+  }, []);
+
   return (
     <>
       <Head>
@@ -12,7 +18,7 @@ export default function Home() {
       </Head>
       <Box className="container home-container">
         <Header />
-        <Hadist data={data} />
+        {hydrated && data?.id && <Hadist data={data} />}
         <Footer />
       </Box>
     </>

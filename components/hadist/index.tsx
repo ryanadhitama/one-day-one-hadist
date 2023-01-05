@@ -3,7 +3,7 @@ import Box from '@components/box';
 
 interface IHadist {
   data: {
-    id: string;
+    id: number;
     hadist: string;
     author: string;
   };

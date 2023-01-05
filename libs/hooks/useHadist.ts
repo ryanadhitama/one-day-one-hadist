@@ -1,8 +1,13 @@
+import { authorMapper } from '@libs/mapper/hadist';
+
 export const useHadist = () => {
+  const { author, filename, min, max } = authorMapper('AbuDaud');
+  const randomNumber = Math.floor(Math.random() * (max - min) + min);
+  const data = filename[randomNumber];
+
   return {
-    id: '1',
-    hadist:
-      "Telah menceritakan kepada kami [Abdullah bin Maslamah bin Qa'nab al Qa'nabi] telah menceritakan kepada kami [Abdul Aziz yakni bin Muhammad] dari [Muhammad yakni bin Amru] dari [Abu Salamah] dari [Al Mughirah bin Syu'bah] bahwasanya Nabi shallallahu 'alaihi wasallam apabila hendak pergi untuk buang hajat, maka beliau menjauh.",
-    author: 'Abu Daud'
+    id: data?.number as number,
+    hadist: data?.id,
+    author: author
   };
 };

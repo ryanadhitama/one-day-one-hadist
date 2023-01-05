@@ -3,4 +3,15 @@
 @import 'tailwindcss/components';
 @import './pages/home.css';
 
+@import '../components/header/style.css';
+@import '../components/footer/style.css';
+
 @import 'tailwindcss/utilities';
+
+* {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}

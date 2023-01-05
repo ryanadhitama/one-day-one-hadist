@@ -1,0 +1,20 @@
+@layer components {
+  .header {
+    @apply py-8;
+    @screen md {
+      @apply py-16;
+    }
+    &__title {
+      @apply font-semibold text-2xl;
+      @screen md {
+        @apply mb-2 text-4xl tracking-wide;
+      }
+    }
+    &__description {
+      @apply text-lg text-gray-700;
+      @screen md {
+        @apply text-2xl;
+      }
+    }
+  }
+}

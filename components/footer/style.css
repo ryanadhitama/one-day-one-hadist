@@ -1,0 +1,8 @@
+@layer components {
+  .footer {
+    @apply text-lg text-gray-700;
+    @screen md {
+      @apply text-2xl;
+    }
+  }
+}

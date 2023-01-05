@@ -1,16 +1,17 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import { Inter } from '@next/font/google';
-const inter = Inter({ subsets: ['latin'] });
+import { Box, Footer, Header } from '@components';
 
 export default function Home() {
   return (
     <>
       <Head>
         <title>Hadist of The Day</title>
-        <meta name="description" content="Get your hadist every day from this site" />
+        <meta name="description" content="Get hadist every day at this site" />
       </Head>
-      <h1 className="title">Hadist of The Day</h1>
+      <Box className="container home-container">
+        <Header />
+        <Footer />
+      </Box>
     </>
   );
 }

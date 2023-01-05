@@ -2,4 +2,14 @@
   .title {
     @apply text-red-600;
   }
+  .home {
+    &-container {
+      @apply max-w-[600px];
+    }
+    @media screen and (max-width: 600px) {
+      &-container {
+        @apply px-[5%];
+      }
+    }
+  }
 }

@@ -1,8 +1,8 @@
 @layer components {
   .header {
-    @apply py-8;
+    @apply mb-4 pt-8 pb-4 border-b border-black;
     @screen md {
-      @apply py-16;
+      @apply mb-8 pt-16 pb-12;
     }
     &__title {
       @apply font-semibold text-2xl;

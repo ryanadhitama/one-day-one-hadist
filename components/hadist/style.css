@@ -1,0 +1,11 @@
+@layer components {
+  .hadist {
+    @apply text-lg;
+    @screen md {
+      @apply text-xl;
+    }
+    &__author {
+      @apply mt-3 font-bold;
+    }
+  }
+}

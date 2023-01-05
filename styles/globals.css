@@ -4,6 +4,7 @@
 @import './pages/home.css';
 
 @import '../components/header/style.css';
+@import '../components/hadist/style.css';
 @import '../components/footer/style.css';
 
 @import 'tailwindcss/utilities';

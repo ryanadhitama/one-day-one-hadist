@@ -1,7 +1,9 @@
 import Head from 'next/head';
-import { Box, Footer, Header } from '@components';
+import { Box, Footer, Hadist, Header } from '@components';
+import { useHadist } from '@libs/hooks/useHadist';
 
 export default function Home() {
+  const data = useHadist();
   return (
     <>
       <Head>
@@ -10,6 +12,7 @@ export default function Home() {
       </Head>
       <Box className="container home-container">
         <Header />
+        <Hadist data={data} />
         <Footer />
       </Box>
     </>

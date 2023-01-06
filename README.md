@@ -3,6 +3,6 @@ Get hadist every day at this site
 
 ### Feature
 - [x] Get random hadist
-- [ ] Support dark mode
+- [x] Support dark mode
 - [ ] Bookmark
 - [ ] Social sharing

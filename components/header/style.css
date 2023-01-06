@@ -1,6 +1,7 @@
 @layer components {
   .header {
-    @apply mb-4 pt-8 pb-4 border-b border-black;
+    @apply mb-4 pt-8 pb-4 border-b;
+    border-color: var(--subheading-color);
     @screen md {
       @apply mb-8 pt-16 pb-12;
     }
@@ -9,12 +10,14 @@
       @screen md {
         @apply mb-2 text-4xl tracking-wide;
       }
+      color: var(--heading-color);
     }
     &__description {
-      @apply text-lg text-gray-700;
+      @apply text-lg;
       @screen md {
         @apply text-2xl;
       }
+      color: var(--subheading-color);
     }
   }
 }

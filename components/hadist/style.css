@@ -1,6 +1,7 @@
 @layer components {
   .hadist {
     @apply text-lg text-justify;
+    color: var(--subheading-color);
     @screen md {
       @apply text-xl;
     }

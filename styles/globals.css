@@ -13,6 +13,17 @@
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+html.dark {
+  --bg-color: #121212;
+  --heading-color: #ffffff;
+  --subheading-color: #888888;
+}
+
 html {
+  @apply duration-500;
   scroll-behavior: smooth;
+  --bg-color: #ffffff;
+  --heading-color: #000000;
+  --subheading-color: #444444;
+  background-color: var(--bg-color);
 }

@@ -1,6 +1,6 @@
 @layer components {
   .footer {
-    @apply mt-4 py-4 border-t text-lg flex items-center justify-between;
+    @apply mt-4 py-4 border-t border-dashed text-lg flex items-center justify-between;
     border-color: var(--subheading-color);
     color: var(--subheading-color);
     @screen md {

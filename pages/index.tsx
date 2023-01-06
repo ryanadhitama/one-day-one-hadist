@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
       <Box className="container home-container">
         <Header />
-        {hydrated && data?.id && <Hadist data={data} />}
+        {hydrated && data?.id ? <Hadist data={data} /> : 'Loading...'}
         <Footer />
       </Box>
     </>

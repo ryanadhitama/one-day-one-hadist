@@ -1,6 +1,6 @@
 @layer components {
   .hadist {
-    @apply text-lg;
+    @apply text-lg text-justify;
     @screen md {
       @apply text-xl;
     }

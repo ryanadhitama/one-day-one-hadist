@@ -1,12 +1,15 @@
 @layer components {
   .hadist {
-    @apply text-lg text-justify;
+    @apply text-base sm:text-lg text-justify;
     color: var(--subheading-color);
     @screen md {
       @apply text-xl;
     }
     &__author {
       @apply mt-3 font-bold;
+    }
+    p {
+      @apply mb-3 sm:mb-5;
     }
   }
 }
